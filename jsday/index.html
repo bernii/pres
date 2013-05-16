@@ -1,0 +1,355 @@
+<!doctype html>
+
+<!-- 
+  Bernard Kobos | https://github.com/bernii
+
+  brought to you by Sauce Labs | http://saucelabs.com
+                                           with L<3VE
+    
+-->
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Automated Cross Browser Testing | by Bernard Kobos @bernii | Sauce Labs</title>
+    
+    <meta name="description" content="Automated Cross Browser Testing - how? why? and for who?" />
+    <meta name="author" content="Bernard Kobos " />
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+
+    <link href="css/impress.css" rel="stylesheet" />
+    
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+
+    <script src="rainbow-custom.min.js"></script>
+    <link href="themes/github.css" rel="stylesheet" type="text/css">
+</head>
+
+
+<body class="impress-not-supported">
+
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+
+<div id="impress">
+
+    <div id="bored" class="step slide" data-x="-1000" data-y="-1500">
+        <h1>Automated Cross Browser Testing</h1>
+        <p>how? when? for whom?</p>
+        <div class="footnote">
+          Bernard Kobos
+          <ul class="my-links">
+            <li><a href="https://github.com/bernii/">bernii@github</a></li>
+            <li><a href="whateva-man">bkobos@twitter</a></li>
+          </ul>
+          <img src="sauce_logo_1.png" alt="Sauce Labs <3"/>
+        </div>
+    </div>
+
+    <div id="qa-1" class="step center" data-x="0" data-y="-1500">
+        <h1 style="font-size: 3em;"><b>QA</b></h1>
+        <h2 class="delay-4 from-below">Sucks</h2>
+    </div>
+
+    <div id="qa-2" class="step center" data-x="0" data-y="-1400">
+        <h1 style="font-size: 3em;"><b>QA</b></h1>
+        <ul>
+          <li>you can't run away</li>
+          <li>big project = high risk of regression</li>
+        </ul>
+    </div>
+
+    <div id="bugloop-1" class="step center" data-x="1000" data-y="-898">
+        <h1 style="font-size: 3em;"><b>BUG</b></h1>
+    </div>
+
+    <div id="bugloop-2" class="step center" data-x="1472" data-y="-1236" data-rotate="-60">
+        <h1 style="font-size: 3em;">FIX</h1>
+    </div>
+
+    <div id="bugloop-3" class="step center" data-x="1392" data-y="-1709" data-rotate="-120">
+        <h1 style="font-size: 3em;"><b>BUG</b></h1>
+    </div>
+
+    <div id="bugloop-4" class="step center" data-x="1045" data-y="-1997" data-rotate="-180">
+        <h1 style="font-size: 3em;">FIX</h1>
+    </div>
+
+    <div id="bugloop-5" class="step center" data-x="617" data-y="-1685" data-rotate="-240">
+        <h1 style="font-size: 3em;"><b>BUG</b></h1>
+    </div>
+
+    <div id="bugloop-6" class="step center" data-x="552" data-y="-1097" data-rotate="-300">
+        <h1 style="font-size: 3em;">FIX</h1>
+    </div>
+
+    <div id="bugloop-7" class="step center" data-x="1000" data-y="-898" data-rotate="-360">
+        <h1 style="font-size: 3em;"><b>BUG</b></h1>
+    </div>
+
+    <div id="qa-3" class="step center" data-x="1000" data-y="-400" data-rotate="-180">
+        <h1 class="delay"><b>Automated testing</b> FTW!</h1>
+        <ul>
+          <li>Continus Integration</li>
+          <li>Code More</li>
+        </ul>
+    </div>
+
+    <div id="integration-vs-unit-1" class="step center" data-x="0" data-y="-640">
+        <h1 style="line-height: 90px;"><b>What should I test?</b></h1>
+    </div>
+
+    <div id="integration-vs-unit-2" class="step center" data-x="0" data-y="-300">
+        <div class="graph-tests">
+          <div class="app">Application</div>
+          <div class="unit-test-wrapper"><div class="app-module">Application Module</div></div>
+          <div class="unit-test-wrapper"><div class="app-module">Application Module</div></div>
+          <div class="unit-test-wrapper"><div class="app-module">Application Module</div></div>
+          <div class="unit-test-wrapper"><div class="app-module">Application Module</div></div>
+
+          <div class="integartion-test-wrapper"><div class="blank-spot">Not tested</div></div>
+          <div class="integartion-test-wrapper"><div class="blank-spot">Not tested</div></div>
+          <div class="integartion-test-wrapper"><div class="blank-spot">Not tested</div></div>
+          <div class="integartion-test-wrapper"><div class="blank-spot">Not tested</div></div>
+        </div>
+    </div>
+
+    <div id="integration-vs-unit-2a" class="step center" data-x="0" data-y="-300">
+        <div class="graph-tests">
+          <div class="app">Application</div>
+          <div class="unit-test-wrapper"><div class="app-module">Application Module</div></div>
+          <div class="unit-test-wrapper"><div class="app-module">Application Module</div></div>
+          <div class="unit-test-wrapper"><div class="app-module">Application Module</div></div>
+          <div class="unit-test-wrapper"><div class="app-module">Application Module</div></div>
+
+          <div class="integartion-test-wrapper"><div class="blank-spot">Not tested</div></div>
+          <div class="integartion-test-wrapper"><div class="blank-spot">Not tested</div></div>
+          <div class="integartion-test-wrapper"><div class="blank-spot">Not tested</div></div>
+          <div class="integartion-test-wrapper"><div class="blank-spot">Not tested</div></div>
+        </div>
+    </div>
+
+    <div id="integration-vs-unit-2b" class="step center" data-x="0" data-y="-300">
+        <div class="graph-tests">
+          <div class="app">Application</div>
+          <div class="unit-test-wrapper"><div class="app-module">Application Module</div></div>
+          <div class="unit-test-wrapper"><div class="app-module">Application Module</div></div>
+          <div class="unit-test-wrapper"><div class="app-module">Application Module</div></div>
+          <div class="unit-test-wrapper"><div class="app-module">Application Module</div></div>
+
+          <div class="integartion-test-wrapper"><div class="blank-spot">Not tested</div></div>
+          <div class="integartion-test-wrapper"><div class="blank-spot">Not tested</div></div>
+          <div class="integartion-test-wrapper"><div class="blank-spot">Not tested</div></div>
+          <div class="integartion-test-wrapper"><div class="blank-spot">Not tested</div></div>
+        </div>
+    </div>
+
+    <div id="integration-vs-unit-3" class="step center" data-x="0" data-y="400">
+        <h1><b>Why I need integration tests?</b></h1>
+        your unit tests do not cover everything
+    </div>
+
+    <div id="selenium-1" class="step center" data-x="2000" data-y="-500">
+        <h1 class="delay"><b>Selenium</b></h1>
+        <h2 class="delay transform-opacity">What is it?</h2>
+    </div>
+
+    <div id="selenium-2" class="step" data-x="2160" data-y="-50" data-rotate="90">
+        <h1 class="delay">It's an open-source tool</h1>
+        <h2 class="delay">That let's you automate browsers</h2>
+    </div>
+
+    <div id="selenium-3" class="step" data-x="2127" data-y="30" data-rotate="90" data-scale=".5">
+        <h1>AUTOMATE BROWSERS</h1>
+        <h2>one to rule them all</h2>
+    </div>
+
+    <div id="selenium-4" class="step" data-x="2050" data-y="30" data-rotate="90" data-scale=".5">
+      <ul class="selenium-browsers browsers">
+        <li class="delay firefox"></li>
+        <li class="delay-2 chrome"></li>
+        <li class="delay-3 safari"></li>
+        <li class="delay-4 opera"></li>
+        <li class="delay-5 ie"></li>
+        <li class="delay-6 android"></li>
+        <li class="delay-7 mobile-safari"></li>
+      </ul>
+    </div>
+
+    <div id="selenium-5" class="step" data-x="2050" data-y="500">
+      <h1 style="font-size: 1.4em;">Selenium 1 vs <b>Selenium 2</b></h1>
+      <h1 class="delay fade-in" style="font-size: 1em;padding-left: 50px;">Selenium RC <b style="margin-left: 150px;">WebDriver</b></h1>
+    </div>
+
+    <div id="selenium-6" class="step" data-x="3050" data-y="500">
+      <h1>How it works</h1>
+      <section id="webdriver-graph">
+        <i>Your script</i>
+        <pre class="grap-elem script-code">
+
+        <code data-language="javascript">
+          var wd = require('wd'),
+              assert = require('assert'),
+              browser = wd.promiseRemote();
+
+          browser.init().then(function () {
+              return browser.get("http://admc.io/wd/test-pages/guinea-pig.html");
+          }).then(function () {
+              return browser.title();
+          }).then(function (title) {
+              assert.equal("My title", title);
+          }).fin(function () {
+              browser.quit();
+          }).done();
+        </code>
+        </pre>
+        <div class="arrows"><div class="left delay-6"></div><div class="right delay"></div></div>
+        <div class="grap-elem icon-selenium">
+          <i>SE server</i>
+        </div>
+        <div class="arrows"><div class="left delay-5"></div><div class="right delay-2"></div></div>
+        <div class="grap-elem icons-drivers">
+          <i>SE driver</i>
+        </div>
+        <div class="arrows delay-4"><div class="left delay-4"></div><div class="right delay-3"></div></div>
+        <div class="grap-elem application">
+          <i>Application</i>
+          <img src="js-logo.png"/>
+        </div>
+        <h3>Use browsers locally to test your app</h3>
+      </section>
+    </div>
+
+    <div id="selenium-7" class="step" data-x="4050" data-y="500">
+      <h1>Example</h1>
+      <pre>
+      <code data-language="javascript">
+var wd = require('wd'),
+    assert = require('assert'),
+    browser = wd.promiseRemote();
+
+browser.init().then(function () {
+    return browser.get("http://2013.jsday.it");
+}).then(function () {
+    return browser.title();
+}).then(function (title) {
+    assert.equal("jsDay 2013 | The international Javascript Conference", title);
+}).fin(function () {
+    browser.quit();
+}).done();
+      </code>
+      </pre>
+    </div>
+
+    <div id="selenium-8" class="step" data-x="5050" data-y="500">
+      <h1>Example test - <b><a href="http://youtu.be/J5G1q1Hcgew">DEMO</a></b></h1>
+    </div>
+
+    <div id="se-builder-1" class="step" data-x="6050" data-y="500">
+      <h1><b>SE Builder</b></h1>
+      <ul>
+        <li>Open Source</li>
+        <li>Graphical tool</li>
+        <li>Fast start</li>
+        <li>Exports to many languages</li>
+      </ul>
+    </div>
+
+    <div id="se-builder-2" class="step" data-x="7050" data-y="500">
+      <h1>SE Builder - <b><a href="http://youtu.be/BfafnVl1UYM">Demo</a></b></h1>
+    </div>
+
+    <div id="selenium-tips" class="step" data-x="8500" data-y="500">
+      <h1 style="font-size: 1.4em;"><b>Selenium</b> Best Practices</h1>
+      <ul>
+        <li>locators</li>
+        <li>spinAssert</li>
+        <li>paralleism</li>
+        <li>end-to-end checks</li>
+      </ul>
+    </div>
+
+    <div id="testing-ninja-1" class="step" data-x="10000" data-y="500">
+      <h1 style="font-size: 1.4em;">Become a <b>Testing Ninja</b> in 5 minutes</h1>
+      <h3 class="delay fade-in" style="margin-top:20px">Open Source project</h3>
+      <h3 class="delay-2 fade-in">GitHub</h3>
+      <h3 class="delay-3 fade-in">Travis CI</h3>
+      <h3 class="delay-4 fade-in">Sauce Labs</h3>
+    </div>
+
+    <div id="testing-ninja-2" class="step" data-x="11500" data-y="500">
+      <h1>Testing Ninja - <b><a href="http://youtu.be/-a3OvbNhw1k">DEMO</a></b></h1>
+    </div>
+
+    <div id="mobile-1" class="step" data-x="11500" data-y="1500">
+      <h1>Testing in the <b>mobile</b> era</h1>
+    </div>
+
+    <div id="mobile-native-1" class="step" data-x="13000" data-y="1500">
+      <h1>Want to test <b>native</b> apps?</h1>
+    </div>
+
+    <div id="mobile-native-1a" class="step" data-x="13000" data-y="1800">
+      <h1>iOS</h1>
+      <h2 class="delay fade-in">UI Automation</h2>
+    </div>
+
+    <div id="mobile-native-1b" class="step" data-x="13400" data-y="1800">
+      <h1>Android</h1>
+      <h2 class="delay fade-in">UI Automator</h2>
+    </div>
+
+    <div id="appium-1" class="step" data-x="14500" data-y="1800">
+      <h1><b>Appium</b> FTW!</h1>
+    </div>
+
+    <div id="appium-2a" class="step" data-x="15500" data-y="1800">
+      <h1>Android & iOS - <b><a href="http://www.youtube.com/watch?feature=player_embedded&v=oTIEt11cXNk">DEMO</a></b></h1>
+    </div>
+
+    <div id="mobile-web-1" class="step" data-x="11500" data-y="3500">
+      <h1>Testing in the <b>mobile web</b> era</h1>
+    </div>
+
+    <div id="mobile-web-2" class="step" data-x="13500" data-y="3500">
+      <h1>iOS WebDriver</h1>
+    </div>
+
+    <div id="mobile-web-2a" class="step" data-x="14500" data-y="3500">
+      <h1>Android WebDriver</h1>
+    </div>
+
+    <div id="appium-again-1" class="step" data-x="16000" data-y="3500">
+      <h1><b>Appium</b> (again)</h1>
+    </div>
+
+    <div id="appium-again-2" class="step" data-x="17500" data-y="3500">
+      <h1>Appium - <b><a href="http://youtu.be/ZGQSxafjK3E">WEB DEMO</a></b></h1>
+    </div>
+
+    <div id="the-end" class="step" data-x="3500" data-y="5500" data-z="15500" data-rotate="90">
+      <h1>The <b>End</b></h1>
+      <h6>Please contribute!</h6>
+        <ul>
+          <li><a href="https://github.com/appium/appium">Appium</a></li>
+          <li><a href="https://github.com/admc/wd">WD.js</a></li>
+          <li><a href="https://github.com/sebuilder/se-builder">Selenium Builder</a></li>
+        </ul>
+      <div class="images">
+        <img src="sauce_logo_1.png" alt="Sauce Labs <3"/>
+        <div id="promocode">PROMO CODE: jsday2013 (lowercase)</div>
+      </div>
+    </div>
+
+</div>
+
+<script src="js/impress.js"></script>
+<script>impress().init();</script>
+</body>
+</html>
